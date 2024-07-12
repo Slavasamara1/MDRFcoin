@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin5000 Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="statusContainer">
+            <p id="status">Points: 0 $BVK</p>
+            <div class="energyBarContainer">
+                <div id="energyBar" class="energyBar">Energy: 100/100</div>
+            </div>
+        </div>
+        <div id="tap" class="tabcontent">
+            <h2>Tap to Earn</h2>
+            <div id="tapStatusMessage">Тапай, тапай маслёнок</div>
+            <div id="phrasesContainer" class="phrasesContainer"></div>
+            <div class="tapContainer">
+
+               <img id="tapImage" src="https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/4e/37/4a30ee54ee23d2f9578f62908492.jpg" alt="Tap" class="tap-image">
+               <button id="shopButton" class="modern-button" onclick="openShop()">Shop</button>
+            </div>
+        </div>
+        <div id="tasks" class="tabcontent">
+            <h2>Tasks</h2>
+            <div id="taskContainer">
+                <button id="watchVideoButton" class="task modern-button" onclick="completeTask('Watch a video', 'https://www.youtube.com')">Watch a video</button>
+                <button id="claimReward" class="task modern-button" style="display:none;" onclick="claimReward()">Claim 100 $BVK</button>
+            </div>
+            <p id="noTasksMessage" style="display:none;">No tasks available at the moment.</p>
+        </div>
+        <div id="referrals" class="tabcontent">
+            <h2>Referrals</h2>
+            <button id="generateLink" class="task modern-button" onclick="generateReferralLink()">Generate Referral Link</button>
+            <p id="referralLink"></p>
+        </div>
+        <div class="tab">
+            <button class="tablink modern-button" onclick="openTab('tap')">Tap</button>
+            <button class="tablink modern-button" onclick="openTab('tasks')">Tasks</button>
+            <button class="tablink modern-button" onclick="openTab('referrals')">Referrals</button>
+        </div>
+    </div>
+
+    <!-- Shop Modal -->
+    <div id="shopModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeShop()">&times;</span>
+            <h2>Shop</h2>
+            <button id="shopItem" class="modern-button" onclick="buyUpgrade()">Buy Upgrade (+2 points per tap) - Cost: 2 $BVK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
