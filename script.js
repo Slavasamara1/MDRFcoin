@@ -14,28 +14,31 @@ const taskContainer = document.getElementById('taskContainer');
 
 let points = 0;
 let pointsPerTap = 1;
-let energy = 100;
-let maxEnergy = 100;
-let upgradeCost = 2;
+let energy = 500;
+let maxEnergy = 500;
+let upgradeCost = 100;
 let videoWatched = false;
 
-const phrases = ["Анна Абдуль", "Абдуленно", "Биткоин пять тыщ"];
+const phrases = ["+1", "+!", ""];
 const statusMessages = [
-    { points: 0, message: "Тапай, тапай маслёнок" },
-    { points: 100, message: "Озонизация проходит" },
-    { points: 500, message: "Адепт" },
-    { points: 1000, message: "Внук Мавроди" },
-    { points: 10000, message: "Десятник МММ" },
-    { points: 100000, message: "Стив Хуйс" },
-    { points: 1000000, message: "Долларовый миллионер" },
-    { points: 10000000, message: "Елькин" },
-    { points: 100000000, message: "Богосатана" }
+    { points: 0, message: "Ну чтоб руки не дрожали" },
+    { points: 100, message: "Чтоб работа спорилась" },
+    { points: 500, message: "Хорошо пошла" },
+    { points: 1000, message: "За моряков" },
+    { points: 10000, message: "За советских дворников" },
+    { points: 100000, message: "Вань, автокликер офни" },
+    { points: 1000000, message: "...." },
+    { points: 10000000, message: "Ладно" },
+    { points: 100000000, message: "Этой надписи никто не увидит" }
 ];
 
 const images = [
-    { points: 0, src: 'tap-image.png' },
-    { points: 100, src: 'new-image1.png' },
-    { points: 1000, src: 'new-image2.png' },
+    { points: 0, src: 'https://i.imgur.com/0x4f5yq.png' },
+    { points: 50, src: 'https://i.imgur.com/Mk04Ndx.png' },
+    { points: 100, src: 'https://i.imgur.com/WX3AuUA.png' },
+    { points: 150, src: 'https://i.imgur.com/zbs8nxS.png' },
+    
+    // Add more images as needed
     // Add more images as needed
 ];
 
@@ -142,7 +145,7 @@ function claimReward() {
 function generateReferralLink() {
     const referralLink = `${window.location.href}?ref=${generateRandomString()}`;
     const referralLinkElement = document.getElementById('referralLink');
-    referralLinkElement.innerText = `Your referral link: ${referralLink}`;
+    referralLinkElement.innerText = `Your referral link: ${https://t.me/MDRFcoinbot/MDRFcoin}`;
 }
 
 function generateRandomString() {
