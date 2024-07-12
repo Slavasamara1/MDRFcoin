@@ -140,9 +140,9 @@ function claimReward() {
 }
 
 function generateReferralLink() {
-    const referralLink = `${t.me/}?ref=${generateRandomString()}`;
+    const referralLink = `${window.location.href}?ref=${generateRandomString()}`;
     const referralLinkElement = document.getElementById('referralLink');
-    referralLinkElement.innerText = `Your referral link: ${referralLink}`;
+    referralLinkElement.innerText = `Your referral link: ${https://t.me/MDRFcoinbot/MDRFcoin}`;
 }
 
 function generateRandomString() {
