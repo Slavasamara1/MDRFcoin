@@ -14,12 +14,12 @@ const taskContainer = document.getElementById('taskContainer');
 
 let points = 0;
 let pointsPerTap = 1;
-let energy = 100;
-let maxEnergy = 100;
+let energy = 500;
+let maxEnergy = 500;
 let upgradeCost = 2;
 let videoWatched = false;
 
-const phrases = ["Анна Абдуль", "Абдуленно", "Биткоин пять тыщ"];
+const phrases = ["Анша Абдуль", "Абдуленно", "Биткоин пять тыщ"];
 const statusMessages = [
     { points: 0, message: "Тапай, тапай маслёнок" },
     { points: 100, message: "Озонизация проходит" },
@@ -33,7 +33,7 @@ const statusMessages = [
 ];
 
 const images = [
-    { points: 0, src: 'tap-image.png' },
+    { points: 0, src: 'https://i.imgur.com/zbs8nxS.png' },
     { points: 100, src: 'new-image1.png' },
     { points: 1000, src: 'new-image2.png' },
     // Add more images as needed
