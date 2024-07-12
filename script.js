@@ -140,7 +140,7 @@ function claimReward() {
 }
 
 function generateReferralLink() {
-    const referralLink = `${window.t.me/}?ref=${generateRandomString()}`;
+    const referralLink = `${t.me/}?ref=${generateRandomString()}`;
     const referralLinkElement = document.getElementById('referralLink');
     referralLinkElement.innerText = `Your referral link: ${referralLink}`;
 }
