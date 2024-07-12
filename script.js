@@ -34,7 +34,7 @@ const statusMessages = [
 
 const images = [
     { points: 0, src: 'https://i.imgur.com/zbs8nxS.png' },
-    { points: 100, src: 'new-image1.png' },
+    { points: 100, src: 'https://i.imgur.com/zbs8nxS.png' },
     { points: 1000, src: 'new-image2.png' },
     // Add more images as needed
 ];
